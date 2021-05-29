@@ -8,7 +8,7 @@ for ia=1:181;
     Lg=cosd(ia-1)*lin;
     yt(:,ia)=(360*Lg*f)/cw-360*(floor(Lg*f/cw));
 end
-A=mod(mod(angle(Y2(1:size(f,2),:)),2*pi)-mod(angle(Y1(1:size(f,2),:)),2*pi),2*pi)*180/pi;
+A=mod(mod(angle(Y1(1:size(f,2),:)),2*pi)-mod(angle(Y2(1:size(f,2),:)),2*pi),2*pi)*180/pi;
 
 for ki=1:size(time,2)
 for fi=1:size(yt,2)
